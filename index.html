@@ -25,7 +25,7 @@
                   <i class="fas fa-angle-right" @click='nextImg'></i>
               </div>
               <div class="nav">
-                <i :class="dot"></i>
+                <i :class=dot v-for="elem in imgLink" ></i>
               </div>
           </div>
       </div>
