@@ -11,8 +11,6 @@
         <title>Slider</title>
     </head>
     <body>
-
-
       <div id="app" class="container">
           <div class="slider-wrapper">
               <div class="prev" >
@@ -25,7 +23,7 @@
                   <i class="fas fa-angle-right" @click='nextImg'></i>
               </div>
               <div class="nav">
-                <i :class=dot v-for="elem in imgLink" ></i>
+                <i class='fas fa-circle' :class="(index == indexImg)? 'active' : ''" dot v-for="(elem ,index) in imgLink" ></i>
               </div>
           </div>
       </div>
